@@ -1,0 +1,19 @@
+# MD trajectories and derived data (too large for the repository)
+*.traj
+bussi_md/**/*.npy
+order_parameter_gaussian_sigma4/
+order_parameter_global/
+XDATCAR*
+
+# VASP pseudopotentials are licensed and must not be redistributed
+POTCAR
+
+# generated plots
+/*.png
+*/plots/*
+!*/plots/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

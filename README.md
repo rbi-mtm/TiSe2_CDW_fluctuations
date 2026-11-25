@@ -4,7 +4,7 @@ Data and code for reproducing the results of the study of charge density wave (C
 
 > L. Benić, D. Novko, I. Lončarić, *Fluctuation-driven multi-step charge density wave melting in monolayer TiSe<sub>2</sub>*, [arXiv:2604.20355](https://arxiv.org/abs/2604.20355).
 
-The same material is archived on Zenodo: [10.5281/zenodo.19109438](https://doi.org/10.5281/zenodo.19109438).
+The same material is archived on Zenodo: [10.5281/zenodo.24517322](https://doi.org/10.5281/zenodo.24517322).
 
 ## Installation
 
@@ -85,4 +85,4 @@ All paths in the codes are relative, so the codes in the root are run from the r
 
 ## Citation
 
-If you use this data or code, please cite the paper above and the Zenodo record [10.5281/zenodo.19109438](https://doi.org/10.5281/zenodo.19109438).
+If you use this data or code, please cite the paper above and the Zenodo record [10.5281/zenodo.24517322](https://doi.org/10.5281/zenodo.24517322).

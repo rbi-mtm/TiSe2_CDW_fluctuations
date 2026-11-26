@@ -23,7 +23,7 @@ conda activate conda_env
 | `data/` | Structures used by the analysis codes (see below) |
 | `bussi_md/` | Code for reproducing the MD trajectories (example for 25 K) |
 | `mace_model/` | Training script, training and test datasets, and the trained MACE potential |
-| `mace_model_r2scan/` | Training script, training and test datasets, and the trained MACE potential obtained by fine-tuning the original MACE potential using r<sup>2</sup>SCAN data |
+| `mace_model_r2scan/` | Training script, training and test datasets, and the trained MACE potential obtained by fine-tuning the original MACE potential using r<sup>2</sup>SCAN data; `TiSe2_model_6.model` is the PBE-based MACE potential used as the starting (foundation) model for the fine-tuning |
 | `dft_dataset/` | Input files for the VASP calculations used for the construction of the dataset |
 | `structure_factors/` | Structure factors from MD data |
 | `dynaphopy/` | Phonon dispersions and power spectra from MD data (DynaPhoPy) |
@@ -80,7 +80,7 @@ All paths in the codes are relative, so the codes in the root are run from the r
 
 ## Notes
 
-- **VASP inputs.** The `KPOINTS` and `POSCAR` files in `dft_dataset/` are given for the unit cell structure, and they are changed according to the supercell that is used. The `POTCAR` file is not included, since VASP pseudopotentials cannot be redistributed; it has to be generated from your own VASP installation (PAW PBE potentials for Ti and Se).
+- **VASP inputs.** The `KPOINTS` and `POSCAR` files in `dft_dataset/` are given for the unit cell structure, and they are changed according to the supercell that is used. The `POTCAR` file is not included, since VASP pseudopotentials cannot be redistributed; it has to be generated from your own VASP installation using the PAW_PBE Se (06Sep2000) and PAW_PBE Ti (08Apr2002) potentials, in the order Se, Ti as in the `POSCAR` file.
 - **Training scripts.** The `PYPATH` variable in the training scripts in `mace_model/` and `mace_model_r2scan/` has to be changed to the path of your own MACE installation.
 
 ## Citation
